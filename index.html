@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Churrascômetro</title>
+  </head>
+  <body>
+    <div id="step1" class="step">
+      <input class="theme-toggle" type="image" src="assets/images/on.png" />
+
+      <h2>Churrascômetro</h2>
+      <p>
+        Fique por dentro de todas as novidades. Cadastre seu email e receba
+        promoções especiais!
+      </p>
+
+      <form id="personalInfoForm">
+        <input
+          type="text"
+          id="name"
+          class="inputForm"
+          placeholder="Digite seu nome"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          class="inputForm"
+          placeholder="Digite seu email"
+          required
+        />
+
+        <input
+          type="text"
+          id="cep"
+          class="inputForm"
+          placeholder="Digite seu CEP"
+          required
+        />
+
+        <label>
+          <input type="checkbox" id="consent" checked />
+          Concordo em receber comunicações e ofertas personalizadas de acordo
+          com meu interesse.
+        </label>
+
+        <button class="botao" type="button" onclick="nextStep()">
+          Cadastrar
+        </button>
+      </form>
+    </div>
+
+    <div id="step2" class="step">
+      <!-- Passo 2 - Campos para quantidade de pessoas -->
+    </div>
+
+    <div id="step3" class="step">
+      <!-- Passo 3 - Tabela de resultado -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

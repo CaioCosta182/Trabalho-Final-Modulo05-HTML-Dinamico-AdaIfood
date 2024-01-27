@@ -1,0 +1,184 @@
+/* Adicione estilos padrão aqui */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 50px;
+}
+
+.theme-toggle {
+    width: 45px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    content: url('assets/images/on.png'); /* Define a imagem inicial */
+}
+
+.theme-toggle.dark-theme::before {
+    content: url('assets/images/off.png'); /* Define a imagem para o tema escuro */
+}
+
+#step1 {
+    text-align: center;
+    width: 35%;
+    padding: 20px;
+    align-items: center;
+}
+
+.step {
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+h2 {
+    color: #dda365;
+    font-family: monospace;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+p {
+    font-weight: 800;
+    margin-top: 1px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.inputForm {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #9b928a;
+}
+
+input#consent {
+    width: 20px;
+    background-color: initial;
+}
+
+.botao {
+    background-color: #c35e37;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.botao:hover {
+    background-color: #ce8366;
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.containerCards>inputCards {
+    background-color: #9b928a;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.labelConvidados {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.inputCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 10px 5px;
+    background-color: #9b928a;
+    max-width: 90%;
+    border-radius: 5px;
+}
+
+#homens,
+#mulheres,
+#crianças,
+#pessoasquebebem {
+    display: block;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    color: #826a55;
+    width: 15%;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+.containerOperacao {
+    display: inline;
+}
+
+.operacao {
+    background-color: #826a55;
+    width: 25%;
+    margin: 20px 15px;
+    border-radius: 5px;
+}
+
+#totalConvidados {
+    color: #c35e37;
+}
+
+table {
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+}
+
+.containerTabela {
+    background-color: #9b928a;
+    width: 80%;
+    margin-left: 30px;
+    color: black;
+}
+
+.containerTabela th, .containerTabela td {
+    padding: 8px;
+    text-align: left;
+}
+
+.containerTabela td:nth-child(2) {
+    text-align: right;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.light-theme {
+    color: black;
+    background-color: white;
+}
+
+/* Estilos para o tema escuro */
+.dark-theme {
+    color: white;
+    background-color: #3f3a3f;
+}
